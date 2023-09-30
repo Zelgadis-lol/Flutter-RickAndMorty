@@ -40,14 +40,14 @@ class CardSwiper extends StatelessWidget {
               Expanded(
                 flex: 5,
                 child: Container(
-                    alignment: Alignment.center,
+                    alignment: Alignment.bottomCenter,
                     width: double.infinity,
                     color: const Color(0xfffafafa),
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(episode.episode)),
               ),
               Expanded(
-                flex: 10,
+                flex: 12,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Container(
@@ -59,7 +59,7 @@ class CardSwiper extends StatelessWidget {
                 ),
               ),
               Expanded(
-                flex: 85,
+                flex: 83,
                 child: Hero(
                   tag: episode.heroId!,
                   child: ClipRRect(
